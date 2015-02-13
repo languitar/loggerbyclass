@@ -1,6 +1,6 @@
 # ============================================================
 #
-# Copyright (C) 2014 by Johannes Wienke <languitar at semipol dot de>
+# Copyright (C) 2014-2015 by Johannes Wienke <languitar at semipol dot de>
 #
 # This file may be licensed under the terms of the
 # GNU Lesser General Public License Version 3 (the ``LGPL''),
@@ -31,8 +31,8 @@ import logging
 
 def get_logger_by_class(klass):
     """Gets a python logger instance based on a class instance. The logger name
-    will be a dotted string containing python module and class name, hence being
-    the full path to the class.
+    will be a dotted string containing python module and class name, hence
+    being the full path to the class.
 
     @param klass: class instance
     @return: logger instance
