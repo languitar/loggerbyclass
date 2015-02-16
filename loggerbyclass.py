@@ -29,7 +29,7 @@ class.
 import logging
 
 
-def get_logger_by_class(klass):
+def get_logger_by_class(klass, instance=None):
     """Gets a python logger instance based on a class instance. The logger name
     will be a dotted string containing python module and class name, hence
     being the full path to the class.
@@ -37,4 +37,6 @@ def get_logger_by_class(klass):
     @param klass: class instance
     @return: logger instance
     """
-    return logging.getLogger(klass.__module__ + "." + klass.__name__)
+    return logging.getLogger(klass.__module__ + "." + klass.__name__ +
+                             (".__{}__".format(instance.replace('.', '_'))
+                              if instance else ""))

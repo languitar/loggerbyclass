@@ -21,7 +21,7 @@
 from setuptools import setup, find_packages
 
 setup(name='loggerbyclass',
-      version='0.1.0',
+      version='0.2.0',
       description='''
                   Provides a single helper function to simplify the common idiom
                   of getting one logger object from python standard logging per
