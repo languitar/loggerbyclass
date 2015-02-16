@@ -1,6 +1,6 @@
 # ============================================================
 #
-# Copyright (C) 2014 by Johannes Wienke <languitar at semipol dot de>
+# Copyright (C) 2014-2015 by Johannes Wienke <languitar at semipol dot de>
 #
 # This file may be licensed under the terms of the
 # GNU Lesser General Public License Version 3 (the ``LGPL''),
@@ -21,7 +21,7 @@
 from setuptools import setup, find_packages
 
 setup(name='loggerbyclass',
-      version='0.2.0',
+      version='0.3.0',
       description='''
                   Provides a single helper function to simplify the common idiom
                   of getting one logger object from python standard logging per
